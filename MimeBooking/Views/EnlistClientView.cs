@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Threading;
 using MimeBooking.Domain;
+using MimeBooking.Services;
 
-namespace MimeBooking.Services
+namespace MimeBooking.Views
 {
     public class EnlistClientView
     {

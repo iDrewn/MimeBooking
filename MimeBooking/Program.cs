@@ -21,5 +21,5 @@ namespace MimeBooking
  * List all bookings [*]
  * Remove booking [*]
  * Exit application [*]
- * Extra feature: List & remove clients 
+ * Extra feature: List & remove clients [*]
  */

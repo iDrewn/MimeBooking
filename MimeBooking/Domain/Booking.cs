@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MimeBooking.Domain
+﻿namespace MimeBooking.Domain
 {
     class Booking
     {
