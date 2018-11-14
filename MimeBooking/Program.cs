@@ -1,4 +1,4 @@
-﻿using System;
+﻿using MimeBooking.Views;
 
 namespace MimeBooking
 {
@@ -6,7 +6,20 @@ namespace MimeBooking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var mainMenuView = new MainMenuView();
+            mainMenuView.Display();
         }
     }
 }
+
+/*
+ * ToDo:
+ * Bookings menu [*]
+ * List bookings [*]
+ * Register new client (mime artist) [*]
+ * Register new booking [*]
+ * List all bookings [*]
+ * Remove booking [*]
+ * Exit application [*]
+ * Extra feature: List & remove clients 
+ */
