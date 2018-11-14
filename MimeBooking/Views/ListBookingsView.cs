@@ -36,11 +36,8 @@ namespace MimeBooking.Views
 
                 string bookingForDeletion = Console.ReadLine();
                 deleteBooking.BookingDelete(bookingForDeletion);
-
-                Console.WriteLine("Booking successfully deleted, returning to main menu");
-                Thread.Sleep(250); Console.Write(".");
-                Thread.Sleep(250); Console.Write(".");
-                Thread.Sleep(250); Console.Write(".");
+                
+                Thread.Sleep(500);
             }
         }
     }

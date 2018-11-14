@@ -12,11 +12,11 @@ namespace MimeBooking.Views
             var clients = new ListClients();
 
             Console.WriteLine($" Clients: {clients._ListClients().Count}");
-            Console.WriteLine("\nFirstname\t\tLastname\t\t\tMain act");
+            Console.WriteLine("\nFirstname\tLastname\t\tMain act");
             Console.WriteLine("-----------------------------------------------------------------------");
             foreach (var client in clients._ListClients())
             {
-                Console.WriteLine($"{client.FirstName}\t{client.LastName}\t{client.MainAct}");
+                Console.WriteLine($"{client.FirstName}\t\t{client.LastName}\t\t\t{client.MainAct}");
             }
 
             Console.Write("\n (D) Delete or (Esc) Return to main menu");
@@ -29,18 +29,15 @@ namespace MimeBooking.Views
                 Console.Clear();
                 foreach (var client in clients._ListClients())
                 {
-                    Console.WriteLine($" Event: {client.FirstName}");
+                    Console.WriteLine($" Client: {client.FirstName}");
                 }
 
                 Console.Write($"\n Delete> ");
 
                 string clientForDeletion = Console.ReadLine();
                 deleteClient.ClientDelete(clientForDeletion);
-
-                Console.WriteLine("Client successfully deleted, returning to main menu");
-                Thread.Sleep(250); Console.Write(".");
-                Thread.Sleep(250); Console.Write(".");
-                Thread.Sleep(250); Console.Write(".");
+                
+                Thread.Sleep(500);
             }
         }
     }
