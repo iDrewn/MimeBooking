@@ -22,14 +22,14 @@ namespace MimeBooking.Views
                 Console.Write("Date of the event 'YYYYMMDD HH:MM': ");
                 var date = Console.ReadLine();
                 Console.Write("Name of the perfomer: ");
-                var perfomer = Console.ReadLine();
+                var performer = Console.ReadLine();
 
                 Console.WriteLine("Is this correct (Y)es (N)o");
                 var confirm = Console.ReadKey(true);
 
                 if (confirm.Key == ConsoleKey.Y)
                 {
-                    addBooking.BookingAdd(new Booking(eventName, date, perfomer));
+                    addBooking.BookingAdd(new Booking(eventName, date, performer));
                     Console.WriteLine("\nBooking added successfully");
                     Thread.Sleep(500);
                     done = true;
