@@ -1,7 +1,6 @@
 # MimeBooking
 School_assignment
 
-/*
  * Bookings menu [*]
  * List bookings [*]
  * Register new client (mime artist) [*]
@@ -10,4 +9,3 @@ School_assignment
  * Remove booking [*]
  * Exit application [*]
  * Extra feature: List & remove clients [*]
- */
