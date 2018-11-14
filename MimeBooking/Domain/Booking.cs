@@ -1,15 +1,16 @@
-﻿namespace MimeBooking.Domain
+﻿using System;
+
+namespace MimeBooking.Domain
 {
     class Booking
     {
         public int Id { get; set; }
         public string EventName { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Performer { get; set; }
-
         public Booking() {}
 
-        public Booking(string eventName, string date, string performer)
+        public Booking(string eventName, DateTime date, string performer)
         {
             EventName = eventName;
             Date = date;

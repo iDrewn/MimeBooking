@@ -19,8 +19,9 @@ namespace MimeBooking.Views
 
                 Console.Write("\nName of the event: ");
                 var eventName = Console.ReadLine();
-                Console.Write("Date of the event 'YYYYMMDD HH:MM': ");
+                Console.Write("Date of the event 'YYYY-MM-DD HH:MM': ");
                 var date = Console.ReadLine();
+                DateTime odate = Convert.ToDateTime(date);
                 Console.Write("Name of the perfomer: ");
                 var performer = Console.ReadLine();
 
@@ -29,7 +30,7 @@ namespace MimeBooking.Views
 
                 if (confirm.Key == ConsoleKey.Y)
                 {
-                    addBooking.BookingAdd(new Booking(eventName, date, performer));
+                    addBooking.BookingAdd(new Booking(eventName, odate, performer));
                     Console.WriteLine("\nBooking added successfully");
                     Thread.Sleep(500);
                     done = true;
